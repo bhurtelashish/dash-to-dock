@@ -34,12 +34,8 @@ const handledWindowTypes = [
  * 
 */
 
-let intellihide = function(show, hide, target, settings) {
-
-    this._init(show, hide, target, settings);
-} 
-
-intellihide.prototype = {
+const intellihide = new Lang.Class({
+    Name: 'Intellihide',
 
     _init: function(show, hide, target, settings) {
 
@@ -402,4 +398,4 @@ intellihide.prototype = {
         }
     }
 
-};
+});
